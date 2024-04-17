@@ -1,0 +1,121 @@
+{
+    "Title": "The Emergency Back Home",
+    "Credits": "Created by Jake Sales (jfsales@ucsc.edu).",
+    "InitialLocation": "Your Table",
+    "Locations": {
+        "Your Table": {
+            "Body": "The story begins on a typical Saturday morning. You find yourself enjoying a nice breakfast at a restaurant.<br>You hear chatter from other tables, and as you finish your meal, you take a look at your phone to see several notifications!<br>Each of them from different numbers. They tell you to come back home immediately!<br><br>Before you go, you have to pay for your meal. Unfortunately, you realize your wallet is missing!<br>All you have is a single dollar. You need to look for cash quick.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Pay for your meal",
+                    "Target": "Cashier"
+                },
+                {
+                    "Text": "Go to the bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Look at other tables",
+                    "Target": "Other Tables"
+                }
+            ]
+        },
+        "Restaurant": {
+            "Body": "You are back at your table. What do you want to do?<br><br>",
+            "Choices": [
+                {
+                    "Text": "Pay for your meal",
+                    "Target": "Cashier"
+                },
+                {
+                    "Text": "Bathroom",
+                    "Target": "Bathroom"
+                },
+                {
+                    "Text": "Look at other tables",
+                    "Target": "Other Tables"
+                }
+            ]
+        },
+        "Bathroom": {
+            "Body": "You make your way to the bathroom. You don't actually need to do anything here.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Leave the Bathroom",
+                    "Target": "Restaurant"
+                }
+            ],
+            "visitedBathroom": true
+        },
+        "Other Tables": {
+            "Body": "You walk around the restaurant while looking at the other tables, hoping there is loose cash around.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Restaurant"
+                }
+            ],
+            "visitOldMan": true
+        },
+        "Cashier": {
+            "Body": "You go up to the cashier. They tell you that your meal is $10.67.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Restaurant"
+                }
+            ],
+            "Paying": true
+        },
+        "On The Road": {
+            "Body": "You pay for your meal using the money you scavenged and can quickly get back to your home! You didn't drive today, so you run back.<br>When arriving at the front door, you check for your keys but can't find them...<br>You forgot your keys. Time to look for your keys around the house.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Check the bushes",
+                    "Target": "Bushes"
+                },
+                {
+                    "Text": "Check the back of the house",
+                    "Target": "Back House"
+                }
+            ]
+        },
+        "Front Door": {
+            "Body": "You're back at the front door. What will you do?",
+            "Choices": [
+                {
+                    "Text": "Check the bushes",
+                    "Target": "Bushes"
+                },
+                {
+                    "Text": "Check the back of the house",
+                    "Target": "Back House"
+                }
+            ],
+            "doorLock": true
+        },
+        "Bushes": {
+            "Body": "You see that there's a key inside the bushes, but you can't reach it. You need something that can help you reach further.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Front Door"
+                }
+            ],
+            "bushEvent": true
+        },
+        "Back House": {
+            "Body": "You go towards the back of the house. There doesn't seem like much of anything here.<br><br>",
+            "Choices": [
+                {
+                    "Text": "Go back",
+                    "Target": "Front Door"
+                }
+            ],
+            "getStick": true
+        },
+        "Beyond": {
+            "Body": "Grass, don't forget to check for ticks!"
+        }
+    }
+}
